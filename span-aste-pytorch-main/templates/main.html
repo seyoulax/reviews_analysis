@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <title>SiriusProj</title>
+</head>
+<body class="bg-gradient">
+<h1 class="first">ALTF4</h1>
+<form class="elements" method=post enctype=multipart/form-data>
+    <div class="formmain" style="height: 300px">
+    {{message}}
+  <input class="drop-container" type=file name=file><button class="loginbutton" type=submit><span>Загрузить</span></button>
+</div>
+</form>
+</body>
+

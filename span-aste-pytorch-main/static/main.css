@@ -1,0 +1,150 @@
+.first {
+    font-size: 45px;
+    letter-spacing: 15px;
+    text-align: center}
+
+.formmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: auto;
+    background-position: center;
+    margin: auto;
+    margin-top: 11%
+}
+
+.drop-container {
+    position: relative;
+    height: 300px;
+    border: 2px dashed #555;
+    cursor: pointer;
+    transition: background .2s ease-out, border .2s ease-in-out;
+    display: flex;
+    min-height: 300px;
+    min-width: 550px;
+}
+
+
+.drop-container:hover,
+.drop-container.drag-active {
+    background: #fff;
+    border-color: #111;
+    border: 2px dashed #555;
+}
+
+.drop-container:hover .drop-title,
+.drop-container.drag-active .drop-title {
+    color: #222;
+}
+
+
+input[type=file] {
+    width: 350px;
+    max-width: 100%;
+    color: #444;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #189ea0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+    font-size: 20px
+}
+
+input[type=file]::file-selector-button:hover {
+    background: #189ea0;
+}
+
+.loginbutton {
+    margin-top: 10px;
+    font-weight: 900;
+    background-origin: padding-box;
+    background-clip: border-box;
+    color: #189ea0;
+    font-size: 16px;
+    line-height: 22px;
+    max-height: 48px;
+    min-height: 48px;
+    padding-top: 12px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    border: 2px solid;
+    border-top-width: 2px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    cursor: pointer;
+    font-family: Onest, Medium;
+    text-decoration: none;
+    background: #fff;
+}
+
+.loginbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+.loginbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.loginbutton:hover span {
+    padding-right: 25px;
+}
+
+.loginbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.elements {
+    margin: auto;
+}
+
+.result {
+    font-size: 30px;
+    text-align: center;
+    margin: auto
+}
+
+.result-text {
+    font-size: 16px;
+    text-align: justify;
+    max-width: 400px;
+}
+
+.bg-gradient {
+    background: linear-gradient(45deg, #189ea0, #fff);
+    background-size: 2000% 2000%;
+    animation: bg-gradient-animation 10s ease-in-out infinite;
+}
+
+@keyframes bg-gradient-animation {
+    0% {
+        background-position: 40% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 40% 50%;
+    }
+}
